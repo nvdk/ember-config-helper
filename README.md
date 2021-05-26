@@ -1,8 +1,7 @@
 ember-config-helper
 ==============================================================================
 
-[Short description of the addon.]
-
+Gaining access to an app's config file from a template only route or component can be annoying. This addon provides a convenience helper to read the config from within the template.
 
 Compatibility
 ------------------------------------------------------------------------------
@@ -23,7 +22,24 @@ ember install ember-config-helper
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Let's say your environment.js file looks like this:
+```js
+module.exports = function (environment) {
+  let ENV = {
+    defaults: {
+      username: "John Doe"
+    }};
+
+  return ENV;
+};
+```
+
+This helper allows you to access that information as follows in your hbs file
+```hbs
+{{config "defaults.username"}}
+```
+
+This helper depends on the excellent [ember-get-config](https://github.com/briarsweetbriar/ember-get-config) to read the app config. as such it should also work within addons.
 
 
 Contributing
