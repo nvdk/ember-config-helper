@@ -1,6 +1,6 @@
 {
   "name": "ember-config-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "convenience helper to read your application config from within a template, so you can easily use it in template only components.",
   "keywords": [
     "ember-addon"
