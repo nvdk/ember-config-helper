@@ -7,7 +7,7 @@ Compatibility
 ------------------------------------------------------------------------------
 
 * Ember.js v3.16 or above
-* Ember CLI v2.13 or above
+* Ember CLI v3.16 or above
 * Node.js v10 or above
 
 
@@ -38,9 +38,6 @@ This helper allows you to access that information as follows in your hbs file
 ```hbs
 {{config "defaults.username"}}
 ```
-
-This helper depends on the excellent [ember-get-config](https://github.com/briarsweetbriar/ember-get-config) to read the app config. as such it should also work within addons.
-
 
 Contributing
 ------------------------------------------------------------------------------
