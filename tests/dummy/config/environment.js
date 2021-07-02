@@ -21,6 +21,12 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+
+    'ember-config-helper': {
+      testData: {
+        field1: 'test',
+      },
+    },
   };
 
   if (environment === 'development') {
