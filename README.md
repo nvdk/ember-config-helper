@@ -6,8 +6,8 @@ Gaining access to an app's config file from a template only route or component c
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.16 or above
-* Ember CLI v3.16 or above
+* Ember.js v3.20 or above
+* Ember CLI v3.20 or above
 * Node.js v10 or above
 
 
