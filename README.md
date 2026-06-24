@@ -1,26 +1,19 @@
-ember-config-helper
-==============================================================================
+# ember-config-helper
 
 Gaining access to an app's config file from a template only route or component can be annoying. This addon provides a convenience helper to read the config from within the template.
 
-Compatibility
-------------------------------------------------------------------------------
+## Compatibility
 
 * Ember.js v5.12 or above
-* Ember CLI v5.12 or above
-* Node.js v12 or above
+- Embroider or ember-auto-import v2
 
-
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 ```
 ember install ember-config-helper
 ```
 
-
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 Let's say your environment.js file looks like this:
 ```js
@@ -39,13 +32,20 @@ This helper allows you to access that information as follows in your hbs file
 {{config "defaults.username"}}
 ```
 
-Contributing
-------------------------------------------------------------------------------
+### Usage in .gjs/.gts
+
+```gts
+import { config } from 'ember-config-helper';
+
+<template>
+  {{config "defaults.username"}}
+</template>
+```
+
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
-
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
