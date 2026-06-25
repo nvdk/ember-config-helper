@@ -41,6 +41,7 @@
     "lint:publish": "npm run build && publint run --level error",
     "lint:types": "ember-tsc --noEmit",
     "prepack": "rollup --config",
+    "release": "release-it",
     "start": "vite dev",
     "test": "vite build --mode=development --out-dir dist-tests && testem --file testem.cjs ci --port 0"
   },
@@ -87,6 +88,7 @@
     "publint": "^0.3.16",
     "qunit": "^2.24.1",
     "qunit-dom": "^3.4.0",
+    "release-it": "^20.2.0",
     "rollup": "^4.22.5",
     "testem": "^3.15.1",
     "typescript": "~5.8.3",
@@ -102,6 +104,11 @@
     "main": "addon-main.cjs",
     "app-js": {
       "./helpers/config.js": "./dist/_app_/helpers/config.js"
+    }
+  },
+  "release-it": {
+    "npm": {
+      "publish": false
     }
   }
 }
