@@ -1,0 +1,14 @@
+steps:
+  release:
+    image: node:22
+    commands:
+      - npm ci
+      - npm config set //registry.npmjs.org/:_authToken $NPM_ACCESS_TOKEN
+      - npm run build
+      - npm publish
+    environment:
+      NPM_ACCESS_TOKEN:
+        from_secret: npm_access_token
+when:
+  event: tag
+  ref: refs/tags/v*
